@@ -10,10 +10,9 @@ export class AppComponent  {
   numArr = [];
   array = [];
   constructor() {
-    this.array = [];
     for(let i = 50; i > 0; i--){
       this.numArr.push(i);
-      if(i%Math.sqrt(i) === 0 &&  (i%3 == 0||i%5 == 5)){
+      if(i%Math.sqrt(i) === 0 &&  (i%3 == 0||i%5 == 0)){
         this.array.push('Perfect' + i);     
       } else if (i%3 == 0 && i%5 == 0){
         this.array.push('Milk Shake');
@@ -27,6 +26,5 @@ export class AppComponent  {
         this.array.push(i);
       }
     }
-    console.log(this.array);
   }
 }
