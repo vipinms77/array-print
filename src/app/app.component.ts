@@ -13,15 +13,15 @@ export class AppComponent  {
     for(let i = 50; i > 0; i--){
       this.numArr.push(i);
       if(i%Math.sqrt(i) === 0 &&  (i%3 == 0||i%5 == 0)){
-        this.array.push('Perfect' + i);     
+        this.array.push(`Perfect ${i}`);     
       } else if (i%3 == 0 && i%5 == 0){
-        this.array.push('Milk Shake');
+        this.array.push(`Milk Shake`);
       } else if (i%3 == 0){
-        this.array.push('Milk');
+        this.array.push(`Milk`);
       } else if (i%5 == 0) {
-        this.array.push('shake')
+        this.array.push(`shake`)
       } else if(i%Math.sqrt(i) == 0) {
-        this.array.push('Perfect');
+        this.array.push(`Perfect`);
       } else {
         this.array.push(i);
       }
